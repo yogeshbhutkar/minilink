@@ -1,4 +1,4 @@
-# Minilink - A Simple Link Shortener
+# Minilink 🔗 - A Simple Link Shortener
 
 Minilink is a minimalist link shortener built with Next.js and Bun. It offers a clean, user-friendly interface for creating and managing shortened URLs with ease.
 
