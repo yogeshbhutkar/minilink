@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Minilink - A Simple Link Shortener
 
-## Getting Started
+Minilink is a minimalist link shortener built with Next.js and Bun. It offers a clean, user-friendly interface for creating and managing shortened URLs with ease.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Fast and Lightweight**: Built with Bun for blazing-fast performance.
+- **Simple UI**: Minimalist design focused on usability.
+- **Open Source**: Fully open-source and customizable.
+- **Copy to Clipboard**: Easily copy shortened URLs with a single click.
+- **Link Previews**: Displays link previews using Open Graph data.
+- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
+- **Easy Deployment**: Ready to deploy on platforms like Vercel.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Preview
 
-## Learn More
+![Minilink Screenshot](./screenshot.png)  
+*A beautiful link shortner for all your needs.*
 
-To learn more about Next.js, take a look at the following resources:
+Deployed with [Vercel](https://vercel.com) at [minilink.yogeshbhutkar.com](https://minilink.yogeshbhutkar.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Getting Started
 
-## Deploy on Vercel
+1. **Clone the repository**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   git clone https://github.com/yogeshbhutkar/minilink.git
+   cd minilink
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Install dependencies**
+
+   ```bash
+   bun install
+   ```
+
+3. **Run the development server**
+
+   ```bash
+   bun dev
+   ```
+
+4. **Open your browser**
+
+   Navigate to `http://localhost:3000` to see the app in action.
+
+---
+
+## 📝 License
+
+Minilink is open-source under the MIT License. Feel free to fork, tweak, and make it your own.
+
+---
+
+## ✨ Want a feature?
+
+Feel free to open an issue or submit a pull request on GitHub. Contributions are welcome!
+
+---
+
+## ❤️ Like Minilink?
+
+If you find Minilink useful, please give it a ⭐ on GitHub! It helps others discover the project and motivates me to keep improving it. Thank you!
