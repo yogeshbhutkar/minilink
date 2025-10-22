@@ -1,58 +1,56 @@
 {
-  "id": "871c2ab0-a9ca-447c-bd87-9fb0e2a5a2da",
-  "prevId": "00000000-0000-0000-0000-000000000000",
-  "version": "7",
-  "dialect": "postgresql",
-  "tables": {
-    "public.urls": {
-      "name": "urls",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "long_url": {
-          "name": "long_url",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "short_code": {
-          "name": "short_code",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true
-        }
-      },
-      "indexes": {},
-      "foreignKeys": {},
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {
-        "urls_short_code_unique": {
-          "name": "urls_short_code_unique",
-          "nullsNotDistinct": false,
-          "columns": [
-            "short_code"
-          ]
-        }
-      },
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    }
-  },
-  "enums": {},
-  "schemas": {},
-  "sequences": {},
-  "roles": {},
-  "policies": {},
-  "views": {},
-  "_meta": {
-    "columns": {},
-    "schemas": {},
-    "tables": {}
-  }
+	"id": "871c2ab0-a9ca-447c-bd87-9fb0e2a5a2da",
+	"prevId": "00000000-0000-0000-0000-000000000000",
+	"version": "7",
+	"dialect": "postgresql",
+	"tables": {
+		"public.urls": {
+			"name": "urls",
+			"schema": "",
+			"columns": {
+				"id": {
+					"name": "id",
+					"type": "serial",
+					"primaryKey": true,
+					"notNull": true
+				},
+				"long_url": {
+					"name": "long_url",
+					"type": "text",
+					"primaryKey": false,
+					"notNull": true
+				},
+				"short_code": {
+					"name": "short_code",
+					"type": "text",
+					"primaryKey": false,
+					"notNull": true
+				}
+			},
+			"indexes": {},
+			"foreignKeys": {},
+			"compositePrimaryKeys": {},
+			"uniqueConstraints": {
+				"urls_short_code_unique": {
+					"name": "urls_short_code_unique",
+					"nullsNotDistinct": false,
+					"columns": ["short_code"]
+				}
+			},
+			"policies": {},
+			"checkConstraints": {},
+			"isRLSEnabled": false
+		}
+	},
+	"enums": {},
+	"schemas": {},
+	"sequences": {},
+	"roles": {},
+	"policies": {},
+	"views": {},
+	"_meta": {
+		"columns": {},
+		"schemas": {},
+		"tables": {}
+	}
 }

@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ReactQueryClientProvider } from "@/components/react-query-client-provider";
+import Navbar from "@/components/navbar";
+import localFont from "next/font/local";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "@/components/ui/sonner";
 
-const geistSans = Geist({
-	variable: "--font-geist-sans",
-	subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
-	subsets: ["latin"],
+const outfit = localFont({
+	src: "../public/fonts/outfit.woff2",
+	variable: "--font-outfit",
+	display: "swap",
+	preload: true,
 });
 
 export const metadata: Metadata = {
@@ -24,11 +24,20 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
-				<ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+		<html lang="en" suppressHydrationWarning>
+			<body className={`antialiased ${outfit.variable}`}>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="system"
+					enableSystem
+					disableTransitionOnChange
+				>
+					<Navbar />
+					<ReactQueryClientProvider>
+						{children}
+					</ReactQueryClientProvider>
+					<Toaster />
+				</ThemeProvider>
 			</body>
 		</html>
 	);
